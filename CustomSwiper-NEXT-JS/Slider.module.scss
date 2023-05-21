@@ -1,0 +1,38 @@
+.my-swiper {
+  width: 100%;
+  height: 100%;
+  //   padding: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .swiper-slide {
+    // background-color: red;
+  }
+  :global {
+    .swiper {
+      width: 75%;
+      height: 80%;
+      padding-bottom: 20px;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      font-size: 30px;
+    }
+
+    .swiper-button-next {
+      right: 5px;
+      transform: translate(50%);
+      background-color: transparent;
+      border: none;
+    }
+    .swiper-button-prev {
+      left: 5px;
+      transform: translate(-50%);
+      background-color: transparent;
+      border: none;
+    }
+  }
+}
